@@ -1,0 +1,16 @@
+Jul 03 15:10:53.614 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jul 03 15:10:53.614 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55651.
+Jul 03 15:10:53.684 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 03 15:10:53.690 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips 
+Jul 03 15:10:54.458 GENERAL: working_dir=D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips
+Jul 03 15:10:54.465 HYPERVISOR: exec_cmd: ethsw create Eng 
+Jul 03 15:10:54.708 HYPERVISOR: exec_cmd: nio create_udp udp-bd9369d6-b543-4ea6-9bda-81309f160aa6 10002 127.0.0.1 10003 
+Jul 03 15:10:54.712 HYPERVISOR: exec_cmd: ethsw add_nio Eng udp-bd9369d6-b543-4ea6-9bda-81309f160aa6 
+Jul 03 15:10:54.728 HYPERVISOR: exec_cmd: ethsw set_access_port Eng udp-bd9369d6-b543-4ea6-9bda-81309f160aa6 1 
+Jul 03 15:10:54.950 HYPERVISOR: exec_cmd: nio create_udp udp-3ff3cf7a-d62a-43c0-bf82-24b4326e5219 10011 127.0.0.1 10010 
+Jul 03 15:10:54.964 HYPERVISOR: exec_cmd: ethsw add_nio Eng udp-3ff3cf7a-d62a-43c0-bf82-24b4326e5219 
+Jul 03 15:10:54.985 HYPERVISOR: exec_cmd: ethsw set_access_port Eng udp-3ff3cf7a-d62a-43c0-bf82-24b4326e5219 1 
+Jul 03 16:02:05.894 HYPERVISOR: exec_cmd: ethsw delete Eng 
+Jul 03 16:02:05.926 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 03 16:02:06.028 HYPERVISOR: Stopped.
+Jul 03 16:02:06.028 GENERAL: reset done.

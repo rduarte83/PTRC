@@ -1,0 +1,31 @@
+Jul 03 15:10:53.554 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jul 03 15:10:53.555 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55649.
+Jul 03 15:10:53.666 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 03 15:10:53.671 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips 
+Jul 03 15:10:54.351 GENERAL: working_dir=D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips
+Jul 03 15:10:54.363 HYPERVISOR: exec_cmd: vm create AP 1 c3725 
+Jul 03 15:10:54.365 VM: VM AP created.
+Jul 03 15:10:54.385 HYPERVISOR: exec_cmd: vm set_con_tcp_port AP 5000 
+Jul 03 15:10:54.394 HYPERVISOR: exec_cmd: c3725 get_mac_addr AP 
+Jul 03 15:10:54.408 HYPERVISOR: exec_cmd: vm set_ios AP C:/Users/r3v/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 03 15:10:54.421 HYPERVISOR: exec_cmd: vm set_disk0 AP 0 
+Jul 03 15:10:54.426 HYPERVISOR: exec_cmd: vm set_exec_area AP 64 
+Jul 03 15:10:54.437 HYPERVISOR: exec_cmd: vm get_status AP 
+Jul 03 15:10:54.447 HYPERVISOR: exec_cmd: vm set_idle_pc AP 0x60bf8288 
+Jul 03 15:10:54.454 HYPERVISOR: exec_cmd: c3725 set_mac_addr AP c201.1e80.0000 
+Jul 03 15:10:54.459 HYPERVISOR: exec_cmd: vm set_nvram AP 256 
+Jul 03 15:10:54.516 HYPERVISOR: exec_cmd: vm set_config AP configs/i1_startup-config.cfg 
+Jul 03 15:10:54.755 HYPERVISOR: exec_cmd: nio create_udp udp-98be0714-245a-4c82-af82-97502396fc60 10004 127.0.0.1 10005 
+Jul 03 15:10:54.766 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AP 0 1 udp-98be0714-245a-4c82-af82-97502396fc60 
+Jul 03 15:10:54.772 HYPERVISOR: exec_cmd: vm get_status AP 
+Jul 03 15:10:54.782 HYPERVISOR: exec_cmd: nio create_udp udp-df286432-682c-42ee-a685-e8f5cc169501 10006 127.0.0.1 10007 
+Jul 03 15:10:54.787 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AP 0 0 udp-df286432-682c-42ee-a685-e8f5cc169501 
+Jul 03 15:10:54.798 HYPERVISOR: exec_cmd: vm get_status AP 
+Jul 03 15:19:16.265 HYPERVISOR: exec_cmd: vm extract_config AP 
+Jul 03 16:02:06.276 HYPERVISOR: exec_cmd: vm get_status AP 
+Jul 03 16:02:06.295 HYPERVISOR: exec_cmd: vm extract_config AP 
+Jul 03 16:02:06.304 HYPERVISOR: exec_cmd: vm delete AP 
+Jul 03 16:02:06.304 VM: VM AP destroyed.
+Jul 03 16:02:06.312 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 03 16:02:06.589 HYPERVISOR: Stopped.
+Jul 03 16:02:06.589 GENERAL: reset done.

@@ -1,0 +1,16 @@
+Apr 20 07:01:34.830 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 20 07:01:34.831 HYPERVISOR: Started on IP = 192.168.124.1, TCP port = 52492.
+Apr 20 07:01:34.966 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 20 07:01:34.975 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips 
+Apr 20 07:01:35.717 GENERAL: working_dir=D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips
+Apr 20 07:01:35.733 HYPERVISOR: exec_cmd: ethsw create Ges 
+Apr 20 07:01:36.507 HYPERVISOR: exec_cmd: nio create_udp udp-1c1f01c2-1925-4e32-b234-27a0da3e3898 10009 192.168.124.1 10008 
+Apr 20 07:01:36.529 HYPERVISOR: exec_cmd: ethsw add_nio Ges udp-1c1f01c2-1925-4e32-b234-27a0da3e3898 
+Apr 20 07:01:36.551 HYPERVISOR: exec_cmd: ethsw set_access_port Ges udp-1c1f01c2-1925-4e32-b234-27a0da3e3898 1 
+Apr 20 19:14:34.650 HYPERVISOR: exec_cmd: nio create_udp udp-df03424c-588a-4aad-b9e9-e3b88bca109c 10016 192.168.124.128 10000 
+Apr 20 19:14:34.676 HYPERVISOR: exec_cmd: ethsw add_nio Ges udp-df03424c-588a-4aad-b9e9-e3b88bca109c 
+Apr 20 19:14:34.697 HYPERVISOR: exec_cmd: ethsw set_access_port Ges udp-df03424c-588a-4aad-b9e9-e3b88bca109c 1 
+Apr 20 19:15:41.613 HYPERVISOR: exec_cmd: ethsw delete Ges 
+Apr 20 19:15:41.637 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 20 19:15:41.725 HYPERVISOR: Stopped.
+Apr 20 19:15:41.725 GENERAL: reset done.

@@ -1,0 +1,64 @@
+Apr 20 00:42:28.145 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 20 00:42:28.145 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50731.
+Apr 20 00:42:28.375 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 20 00:42:28.388 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips 
+Apr 20 00:42:29.550 GENERAL: working_dir=D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips
+Apr 20 00:42:29.552 HYPERVISOR: exec_cmd: vm create Datacenter 2 c3725 
+Apr 20 00:42:29.553 VM: VM Datacenter created.
+Apr 20 00:42:29.558 HYPERVISOR: exec_cmd: vm set_con_tcp_port Datacenter 5001 
+Apr 20 00:42:29.560 HYPERVISOR: exec_cmd: c3725 get_mac_addr Datacenter 
+Apr 20 00:42:29.563 HYPERVISOR: exec_cmd: vm set_ios Datacenter C:/Users/r3v/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 20 00:42:29.566 HYPERVISOR: exec_cmd: vm set_disk0 Datacenter 0 
+Apr 20 00:42:29.569 HYPERVISOR: exec_cmd: vm set_exec_area Datacenter 64 
+Apr 20 00:42:29.573 HYPERVISOR: exec_cmd: vm set_nvram Datacenter 256 
+Apr 20 00:42:29.576 HYPERVISOR: exec_cmd: vm set_ram Datacenter 256 
+Apr 20 00:42:29.579 HYPERVISOR: exec_cmd: c3725 set_mac_addr Datacenter c202.1454.0000 
+Apr 20 00:42:29.582 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:29.585 HYPERVISOR: exec_cmd: vm slot_add_binding Datacenter 1 0 NM-16ESW 
+Apr 20 00:42:29.588 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:29.591 HYPERVISOR: exec_cmd: vm set_idle_pc Datacenter 0x60bf8288 
+Apr 20 00:42:29.594 HYPERVISOR: exec_cmd: vm set_config Datacenter configs/i2_startup-config.cfg 
+Apr 20 00:42:29.861 HYPERVISOR: exec_cmd: nio create_gen_eth generic_ethernet-c8de401b-a5ae-49c5-8de4-ee494c4436ed \Device\NPF_{53D853F0-2070-43B7-912A-32023BEFEE72} 
+Apr 20 00:42:29.904 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter 0 0 generic_ethernet-c8de401b-a5ae-49c5-8de4-ee494c4436ed 
+Apr 20 00:42:29.928 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:29.965 HYPERVISOR: exec_cmd: nio create_udp udp-be7cc6e6-4ae6-4aaf-9210-c03c26075f17 10006 127.0.0.1 10007 
+Apr 20 00:42:29.984 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter 1 1 udp-be7cc6e6-4ae6-4aaf-9210-c03c26075f17 
+Apr 20 00:42:30.000 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:30.029 HYPERVISOR: exec_cmd: nio create_udp udp-c3dbf1d1-7216-4981-b9e4-6972b1044067 10008 127.0.0.1 10009 
+Apr 20 00:42:30.045 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter 1 2 udp-c3dbf1d1-7216-4981-b9e4-6972b1044067 
+Apr 20 00:42:30.069 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:30.104 HYPERVISOR: exec_cmd: nio create_udp udp-4d8b4c1d-5552-4c7b-b742-307b6b485590 10010 127.0.0.1 10011 
+Apr 20 00:42:30.117 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter 1 3 udp-4d8b4c1d-5552-4c7b-b742-307b6b485590 
+Apr 20 00:42:30.134 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:30.162 HYPERVISOR: exec_cmd: nio create_udp udp-18211711-e82d-4fae-9ab8-09668cbd8f6b 10013 127.0.0.1 10012 
+Apr 20 00:42:30.184 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter 0 1 udp-18211711-e82d-4fae-9ab8-09668cbd8f6b 
+Apr 20 00:42:30.205 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:45.995 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Apr 20 00:42:45.995 VM: VM Ghost created.
+Apr 20 00:42:46.005 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/r3v/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 20 00:42:46.013 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 20 00:42:46.025 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-adventerprisek9-mz124-15.image-256.ghost 
+Apr 20 00:42:46.032 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Apr 20 00:42:46.039 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 20 00:42:46.043 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 20 00:42:46.209 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 20 00:42:46.216 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 20 00:42:46.277 VM: VM Ghost shutdown.
+Apr 20 00:42:46.280 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 20 00:42:46.280 VM: VM Ghost destroyed.
+Apr 20 00:42:46.292 HYPERVISOR: exec_cmd: vm set_ghost_status Datacenter 2 
+Apr 20 00:42:46.303 HYPERVISOR: exec_cmd: vm set_ghost_file Datacenter c3725-adventerprisek9-mz124-15.image-256.ghost 
+Apr 20 00:42:46.316 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 00:42:46.329 HYPERVISOR: exec_cmd: vm start Datacenter 
+Apr 20 01:36:37.567 HYPERVISOR: exec_cmd: vm extract_config Datacenter 
+Apr 20 01:36:43.178 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 01:36:43.184 HYPERVISOR: exec_cmd: vm stop Datacenter 
+Apr 20 01:36:43.405 VM: VM Datacenter shutdown.
+Apr 20 01:36:43.410 HYPERVISOR: exec_cmd: vm extract_config Datacenter 
+Apr 20 01:36:58.036 HYPERVISOR: exec_cmd: vm get_status Datacenter 
+Apr 20 01:36:58.052 HYPERVISOR: exec_cmd: vm extract_config Datacenter 
+Apr 20 01:36:58.070 HYPERVISOR: exec_cmd: vm delete Datacenter 
+Apr 20 01:36:58.070 VM: VM Datacenter destroyed.
+Apr 20 01:36:58.085 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 20 01:36:58.432 HYPERVISOR: Stopped.
+Apr 20 01:36:58.432 GENERAL: reset done.

@@ -1,0 +1,107 @@
+#DATACENTER
+conf t
+
+#routes
+ip route 0.0.0.0 0.0.0.0 192.168.229.254
+ip route 192.168.5.0 255.255.255.0 f1/3
+
+#NAT ACLs
+access-list 1 deny 192.168.5.0 0.0.0.255
+access-list 1 permit any
+ip nat inside source list 1 int f0/0 overload
+
+#Port FW
+ip nat inside source static tcp 192.168.1.1 80 192.168.229.204 80 extendable
+ip nat inside source static tcp 192.168.1.1 443 192.168.229.204 443 extendable
+ip nat inside source static tcp 192.168.1.1 1723 192.168.229.204 1723 extendable
+ip nat inside source static tcp 192.168.1.1 3389 192.168.229.204 3389 extendable
+
+#Interfaces
+int f0/0
+no sh
+ip add 192.168.229.204 255.255.255.0
+ip nat out
+exit
+
+int f0/1
+no sh
+ip add 192.168.1.254 255.255.255.0
+ip nat in
+ip access-group 1 out
+exit
+
+int f1/1
+no sh
+no switchport
+ip add 192.168.2.254 255.255.255.0
+ip nat in
+ip access-group 1 out
+exit
+
+int f1/2
+no sh
+no switchport
+ip add 192.168.3.254 255.255.255.0
+ip nat in
+ip access-group 1 out
+exit
+
+int f1/3
+no sh
+no switchport
+ip add 192.168.4.254 255.255.255.0
+ip nat in
+end
+
+# dhcp pools
+conf t
+ip dhcp pool ges
+network 192.168.2.0 255.255.255.0
+default-router 192.168.2.254
+dns-server 192.168.1.1
+option 252 ascii "http://192.168.1.1:808/wpad.dat "
+exit
+
+ip dhcp pool eng
+network 192.168.3.0 255.255.255.0
+default-router 192.168.3.254
+dns-server 192.168.1.1
+option 252 ascii "http://192.168.1.1:808/wpad.dat "
+exit
+
+ip dhcp pool com
+network 192.168.4.0 255.255.255.0
+default-router 192.168.4.254
+dns-server 192.168.1.1
+option 252 ascii "http://192.168.1.1:808/wpad.dat "
+exit
+
+ip dhcp pool comwifi
+network 192.168.5.0 255.255.255.0
+default-router 192.168.5.254
+dns-server 192.168.1.1
+option 252 ascii "http://192.168.1.1:808/wpad.dat "
+exit
+
+
+
+end
+wr
+
+##################################################
+#AP
+conf t
+
+ip route 0.0.0.0 0.0.0.0 192.168.4.254
+
+int f0/0
+no sh
+ip add 192.168.4.253 255.255.255.0
+exit
+
+int f0/1
+no sh
+ip add 192.168.5.254 255.255.255.0
+ip helper-address 192.168.4.254
+end
+wr

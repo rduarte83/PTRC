@@ -1,0 +1,27 @@
+Jul 03 15:11:09.746 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jul 03 15:11:09.747 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55855.
+Jul 03 15:11:09.754 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 03 15:11:09.757 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips 
+Jul 03 15:11:09.757 GENERAL: working_dir=D:\Dropbox\ESTGA\#projredes\gns3\projects\projredes\project-files\dynamips
+Jul 03 15:11:09.760 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jul 03 15:11:14.658 HYPERVISOR: exec_cmd: ethsw rename SW1 DC 
+Jul 03 15:11:36.011 HYPERVISOR: exec_cmd: nio create_udp udp-453a176a-29e9-4a8a-a0c9-ec11d2747848 10017 127.0.0.1 10016 
+Jul 03 15:11:36.023 HYPERVISOR: exec_cmd: ethsw add_nio DC udp-453a176a-29e9-4a8a-a0c9-ec11d2747848 
+Jul 03 15:11:36.047 HYPERVISOR: exec_cmd: ethsw set_access_port DC udp-453a176a-29e9-4a8a-a0c9-ec11d2747848 1 
+Jul 03 15:11:38.999 HYPERVISOR: exec_cmd: nio create_udp udp-36ef4a72-52ca-444d-9520-85faf76c9875 10020 127.0.0.1 10021 
+Jul 03 15:11:39.013 HYPERVISOR: exec_cmd: ethsw add_nio DC udp-36ef4a72-52ca-444d-9520-85faf76c9875 
+Jul 03 15:11:39.026 HYPERVISOR: exec_cmd: ethsw set_access_port DC udp-36ef4a72-52ca-444d-9520-85faf76c9875 1 
+Jul 03 15:11:56.444 HYPERVISOR: exec_cmd: ethsw remove_nio DC udp-36ef4a72-52ca-444d-9520-85faf76c9875 
+Jul 03 15:11:56.474 HYPERVISOR: exec_cmd: nio delete udp-36ef4a72-52ca-444d-9520-85faf76c9875 
+Jul 03 15:12:07.673 HYPERVISOR: exec_cmd: ethsw remove_nio DC udp-453a176a-29e9-4a8a-a0c9-ec11d2747848 
+Jul 03 15:12:07.692 HYPERVISOR: exec_cmd: nio delete udp-453a176a-29e9-4a8a-a0c9-ec11d2747848 
+Jul 03 15:12:35.500 HYPERVISOR: exec_cmd: nio create_udp udp-67ee446d-4f38-40d5-be4d-2a993a1b29ef 10017 127.0.0.1 10016 
+Jul 03 15:12:35.509 HYPERVISOR: exec_cmd: ethsw add_nio DC udp-67ee446d-4f38-40d5-be4d-2a993a1b29ef 
+Jul 03 15:12:35.528 HYPERVISOR: exec_cmd: ethsw set_access_port DC udp-67ee446d-4f38-40d5-be4d-2a993a1b29ef 1 
+Jul 03 15:12:42.549 HYPERVISOR: exec_cmd: nio create_udp udp-eec05e25-8c96-46dd-b17e-4a732a126512 10018 127.0.0.1 10019 
+Jul 03 15:12:42.572 HYPERVISOR: exec_cmd: ethsw add_nio DC udp-eec05e25-8c96-46dd-b17e-4a732a126512 
+Jul 03 15:12:42.589 HYPERVISOR: exec_cmd: ethsw set_access_port DC udp-eec05e25-8c96-46dd-b17e-4a732a126512 1 
+Jul 03 16:02:05.898 HYPERVISOR: exec_cmd: ethsw delete DC 
+Jul 03 16:02:05.939 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 03 16:02:06.044 HYPERVISOR: Stopped.
+Jul 03 16:02:06.044 GENERAL: reset done.
